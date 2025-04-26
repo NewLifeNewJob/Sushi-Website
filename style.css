@@ -1,5 +1,18 @@
 .nav{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav_list{
+    width: 100%;
+}
+.nav_item{
+    padding: 2rem 2rem;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+
+}
+.nav_item >a{
+    color: brown;
 }
