@@ -16,10 +16,14 @@
 }
 .nav_item{
     padding: 2rem 2rem;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
 
 }
 .nav_item >a{
     color: pink;
+    transition: color .3s;
+}
+.nav_item >a:hover{
+    color: red;
 }
