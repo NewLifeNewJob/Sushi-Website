@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 .nav{
     background-color: black;
     display: flex;
@@ -56,4 +60,57 @@
     .nav_list.active{
         display: block;
     }   
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+.carry_out {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.carry_out > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_container {
+    max-width: 700px;
+    width: 95%;
+    margin: 20px auto
+}
+
+.footer_col {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 30px;
+    
+}
+
+.footer_store_hours, .footer_store_location {
+    margin-bottom: 20px;
+
+}
+
+.footer_copyright {
+    text-align: center;
+    padding: 35px 0;
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .footer_col {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_col:first-of-type {
+        padding-right: 20px;
+    }
 }
