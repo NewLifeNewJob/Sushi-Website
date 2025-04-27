@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+html {
+    background-color: white;
+}
+
 .nav{
     background-color: black;
     display: flex;
@@ -90,12 +94,10 @@ footer {
     width: 80%;
     font-size: 1.1rem;
     line-height: 30px;
-    
 }
 
 .footer_store_hours, .footer_store_location {
     margin-bottom: 20px;
-
 }
 
 .footer_copyright {
@@ -104,7 +106,12 @@ footer {
     font-size: 0.8rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+    .carry_out {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+
     .footer_col {
         display: flex;
         justify-content: space-between;
@@ -112,5 +119,11 @@ footer {
 
     .footer_col:first-of-type {
         padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .carry_out {
+        padding: 40px;
     }
 }
