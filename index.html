@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sushi</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
-    <nav class="nav collapsible">
+    <nav class="nav collapsible collapsible_expanded">
       <a href="/"
         ><img src="Images/Sushi_Logo.jpg" alt="sushi Sushi_Logo" width="250"
       /></a>
-      <svg class="icon icon--primary">
+      <svg class="icon icon--primary nav_toggler" data-toggle="collapsible">
         <use xlink:href="images/sprite.svg#menu"></use>
       </svg>
       <ul class="List nav_list collapsible_content">
