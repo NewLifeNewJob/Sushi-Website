@@ -1,39 +1,58 @@
-.home_pic{
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    position: relative;
-    height: 80vh;
+body header footer{
+    display: block;
 }
+
 
 .header {
     position: absolute;
-    top: 0;
-    z-index: 10;
-    transform: translateX(50%);
+    top: 0rem;
+    left: 50%;   
+    z-index: 100;
+    transform: translateX(-50%);
     width: 100%;
-    right:50%;
     text-align: center;
-    display: block;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    
+    
 }
 .header_nav{
    color: white;
    text-transform: uppercase;
    font-weight: 700;
    margin: 0 40px 0 0;
+   padding-right: 10px;
+   a:visited { text-decoration: none; color:white; }
+   a:hover { text-decoration: none; color:white; }
+   a:focus { text-decoration: none; color:white; }
 }
-@media only screen and (min-width: 992px) {
+
+@media only screen and (min-width: 500px) {
+    .header_nav{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px) {
     .header_nav{
         display: inline-block;
         position: relative;
         top: 2px;
+        z-index: 100;
+        text-decoration: none;
     }
     
 }
 .header_middle{
+    position: fixed;
+    z-index: 100;
+    text-align: center;
     display: inline-block;
+    position: relative;
+    text-decoration: none;
+    
+
+    
 }
 .header_logo{
     background: white;
@@ -42,6 +61,8 @@
     text-align: center;
     line-height: 1;
     display: block;
+    text-decoration: none;
+    
 }
 .header_OO{
     background: black;
@@ -52,6 +73,7 @@
     text-transform: uppercase;
     padding: 10px 0;
     text-align: center;
+    text-decoration: none;
 
 }
 .header_nav_right{
@@ -59,9 +81,42 @@
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 0 0 40px;
+    text-decoration: none;
     }
 
+.mobile_nav{
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    z-index: 100;
+    text-decoration: none;
+    a:visited { text-decoration: none; color:white; }
+   a:hover { text-decoration: none; color:white; }
+   a:focus { text-decoration: none; color:white; }
+}
+@media only screen and (min-width: 400px) {
+.mobile_nav{
+    display: block;
+    margin-top: 20px;
+  
+}
+}    
+@media  only screen and (min-width: 1024px) {
+    .mobile_nav{
+        display: none;
+    }
+    
+}
 
+
+.home_pic{
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    height: 80vh;
+    z-index: 1;
+}
 footer {
     background-color: black;
     color: white;
