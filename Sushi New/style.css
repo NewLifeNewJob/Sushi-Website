@@ -1,0 +1,125 @@
+.home_pic{
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    height: 80vh;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    transform: translateX(50%);
+    width: 100%;
+    right:50%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.header_nav{
+   color: white;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin: 0 40px 0 0;
+}
+@media only screen and (min-width: 992px) {
+    .header_nav{
+        display: inline-block;
+        position: relative;
+        top: 2px;
+    }
+    
+}
+.header_middle{
+    display: inline-block;
+}
+.header_logo{
+    background: white;
+    padding: 10px 10px 16px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    display: block;
+}
+.header_OO{
+    background: black;
+    color: white;
+    display: block;
+    font-weight: 700;
+    transition: .3s;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+
+}
+.header_nav_right{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 0 40px;
+    }
+
+
+footer {
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+.carry_out {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.carry_out > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_container {
+    max-width: 700px;
+    width: 95%;
+    margin: 20px auto
+}
+
+.footer_col {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.footer_store_hours, .footer_store_location {
+    margin-bottom: 20px;
+}
+
+.footer_copyright {
+    text-align: center;
+    padding: 35px 0;
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .carry_out {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+
+    .footer_col {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_col:first-of-type {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .carry_out {
+        padding: 40px;
+    }
+}
