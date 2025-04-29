@@ -1,4 +1,11 @@
+* {
+    margin: 0;
+}
 
+html {
+    background-color: white;
+}
+  
 .home_pic{
     background-size: cover; 
     background-position: center center; 
