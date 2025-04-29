@@ -5,67 +5,15 @@
 html {
     background-color: white;
 }
-
-.nav{
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
-    align-items: center;
+  
+.home_pic{
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    height: 80vh;
+    z-index: 1;
 }
-.icon{
-    width: 40px;
-    height: 40px;
-}
-.icon--primary{
-    fill: white;
-}
-.nav_list {
-    display: none; /* Hide the navigation list by default */
-    flex-direction: column; /* Stack items vertically when visible */
-    width: 100%;
-}
-
-.nav_list.active {
-    display: flex; /* Show the navigation list when active */
-}
-
-.nav_toggler {
-    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
-}
-
-.nav_item{
-    padding: 2rem 2rem;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-
-}
-.nav_item >a{
-    color: pink;
-    transition: color .3s;
-}
-.nav_item >a:hover{
-    color: red;
-}
-
-.collapsible_content {
-    display: none;
-    transition: max-height 0.3s ease-out;
-  }
-
-.nav_toggle{
-    opacity: 0.5;
-}
-@media screen and (max-width: 768px) {
-    .nav_toggle{
-        display: none;
-    }
-    .nav_list.active{
-        display: block;
-    }   
-}
-
 footer {
     background-color: black;
     color: white;
