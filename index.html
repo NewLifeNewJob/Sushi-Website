@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sushi</title>
+    <title>Sushi Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
-    <nav class="nav collapsible collapsible_expanded">
-      <a href="/"
-        ><img src="Images/Sushi_Logo.jpg" alt="sushi Sushi_Logo" width="250"
-      /></a>
-      <svg class="icon icon--primary nav_toggler" data-toggle="collapsible">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <ul class="List nav_list collapsible_content">
-        <li class="nav_item"><a href="#">Menu</a></li>
-        <li class="nav_item"><a href="#">Location</a></li>
-        <li class="nav_item"><a href="#">Order Online</a></li>
-        <li class="nav_item"><a href="#">About</a></li>
-        <li class="nav_item"><a href="#">reservations</a></li>
-      </ul>
-    </nav>
+    <header class="header">
+      <div class="header_nav">
+        <a href="#menus">Menus</a>
+        <a href="#reservations">Location</a>
+      </div>
+      <div class="header_middle">
+        <a href="/index.html" class="header_logo">
+          <h1>Sushi's</h1>
+          <span>Restaurant • Sushi Bar • Cocktails</span>
+        </a>
+        <a href="#orderonline" class="header_OO">Order Online</a>
+      </div>
+      <div class="header_nav header_nav_right">
+        <a href="#about">About</a>
+        <a href="#reservations">Reservations</a>
+      </div>
+      <div class="mobile_nav">
+        <a href="#menus">Menus</a>
+        <a href="#reservations">Location</a>
+        <a href="#about">About</a>
+        <a href="reservations">Reservations</a>
+      </div>
+    </header>
+    <div
+      class="home_pic"
+      style="background-image: url('Images/Sushi_Background.jpg')"></div>
 
     <div class="about">
       <section aria-label="about-restaurant">
