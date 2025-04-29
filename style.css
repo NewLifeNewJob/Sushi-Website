@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
 }
@@ -64,6 +68,45 @@ html {
     .nav_list.active{
         display: block;
     }   
+}
+
+/* .about_content {
+    width: 100vw;
+    margin: 10px 0;
+    display: flex;
+}
+
+.carousel {
+    width: 50%;
+    height: 50%;
+}
+
+.slide {
+    position: absolute;
+}
+
+.slide > img {
+    width: 100%;
+    height: 100%;
+} */
+
+.carousel_dot {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
 }
 
 footer {
