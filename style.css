@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
 }
@@ -14,6 +18,73 @@ html {
     height: 80vh;
     z-index: 1;
 }
+
+#welcome {
+    font-size: 60px;
+    text-align: center;
+    color: #e7750a;
+}
+
+#about_restaurant {
+    background-color: #4b5c53;
+}
+
+.about_images {
+    width: 100vw;
+}
+
+.carousel {
+    width: 100%;
+    position: relative;
+    padding: 30px 100px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.carousel_dot {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #e7750a;
+}
+
+.about_content {
+    padding: 40px 50px;
+    font-size: 1.1rem;
+    width: 100%;
+    color: rgb(253, 217, 217);
+}
+
 footer {
     background-color: black;
     color: white;
@@ -24,6 +95,7 @@ footer {
     text-align: center;
     font-size: 1.2rem;
     color: white;
+    padding: 20px;
 }
 
 .carry_out > a {
@@ -57,7 +129,6 @@ footer {
 @media only screen and (min-width: 768px) {
     .carry_out {
         font-size: 1.4rem;
-        padding: 20px;
     }
 
     .footer_col {
@@ -68,10 +139,43 @@ footer {
     .footer_col:first-of-type {
         padding-right: 20px;
     }
+
+    .about {
+        display: flex;
+        padding: 0 10%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .about_images {
+        height: 100%;
+    }
+
+    .carousel {
+        padding: 40px;
+    }
+
+    .slide > img {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    .about_content {
+        font-size: 1rem;
+        padding: 40px 0;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     .carry_out {
         padding: 40px;
+    }
+
+    .about {
+        padding-bottom: 30px;
+    }
+
+    .about_images {
+        text-align: center;
     }
 }
