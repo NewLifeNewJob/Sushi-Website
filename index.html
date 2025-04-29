@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sushi</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <nav class="nav collapsible collapsible_expanded">
@@ -26,43 +26,43 @@
 
     <div class="about">
       <section aria-label="about-restaurant">
+        <h1>Welcome</h1>
+
         <div class="about_content">
           <div class="carousel">
-            <ul>
-              <li class="slide">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1675278298876-9f988904907c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Store Board" />
-              </li>
-              <li class="slide">
-                <img
-                  src="https://images.unsplash.com/photo-1634714434441-078536768250?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3VzaGklMjByZXN0YXVyYW50fGVufDB8fDB8fHww"
-                  alt="Chef" />
-              </li>
-              <li class="slide">
-                <img
-                  src="https://images.unsplash.com/photo-1725122194872-ace87e5a1a8d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Table" />
-              </li>
-              <li class="slide">
-                <img
-                  src="https://images.unsplash.com/photo-1596463299271-541b199c8b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHN1c2hpJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
-                  alt="Atmosphere" />
-              </li>
-              <li class="slide">
-                <img
-                  src="https://images.unsplash.com/photo-1634881091116-1876b8c2b414?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHN1c2hpJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
-                  alt="Sushi Bar" />
-              </li>
-            </ul>
-
-            <div class="carousel_dot">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+            <div class="slide fade">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1675278298876-9f988904907c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Store Board" />
             </div>
+            <div class="slide fade">
+              <img
+                src="https://images.unsplash.com/photo-1634714434441-078536768250?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3VzaGklMjByZXN0YXVyYW50fGVufDB8fDB8fHww"
+                alt="Chef" />
+            </div>
+            <div class="slide fade">
+              <img
+                src="https://images.unsplash.com/photo-1725122194872-ace87e5a1a8d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Table" />
+            </div>
+            <div class="slide fade">
+              <img
+                src="https://images.unsplash.com/photo-1596463299271-541b199c8b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHN1c2hpJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Atmosphere" />
+            </div>
+            <div class="slide fade">
+              <img
+                src="https://images.unsplash.com/photo-1634881091116-1876b8c2b414?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHN1c2hpJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Sushi Bar" />
+            </div>
+          </div>
+
+          <div class="carousel_dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
           </div>
         </div>
       </section>
