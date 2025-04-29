@@ -1,59 +1,70 @@
-.nav{
+
+.home_pic{
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    height: 80vh;
+    z-index: 1;
+}
+footer {
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
-    align-items: center;
-}
-.icon{
-    width: 40px;
-    height: 40px;
-}
-.icon--primary{
-    fill: white;
-}
-.nav_list {
-    display: none; /* Hide the navigation list by default */
-    flex-direction: column; /* Stack items vertically when visible */
-    width: 100%;
+    color: white;
+    display: block;
 }
 
-.nav_list.active {
-    display: flex; /* Show the navigation list when active */
+.carry_out {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
 }
 
-.nav_toggler {
-    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+.carry_out > a {
+    text-decoration: none;
+    color: white;
 }
 
-.nav_item{
-    padding: 2rem 2rem;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-
-}
-.nav_item >a{
-    color: pink;
-    transition: color .3s;
-}
-.nav_item >a:hover{
-    color: red;
+.footer_container {
+    max-width: 700px;
+    width: 95%;
+    margin: 20px auto
 }
 
-.collapsible_content {
-    display: none;
-    transition: max-height 0.3s ease-out;
-  }
-
-.nav_toggle{
-    opacity: 0.5;
+.footer_col {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 30px;
 }
-@media screen and (max-width: 768px) {
-    .nav_toggle{
-        display: none;
+
+.footer_store_hours, .footer_store_location {
+    margin-bottom: 20px;
+}
+
+.footer_copyright {
+    text-align: center;
+    padding: 35px 0;
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .carry_out {
+        font-size: 1.4rem;
+        padding: 20px;
     }
-    .nav_list.active{
-        display: block;
-    }   
+
+    .footer_col {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_col:first-of-type {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .carry_out {
+        padding: 40px;
+    }
 }
