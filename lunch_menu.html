@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunch Menu</title>
+    <link rel="stylesheet" href="lunch_menu.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_nav">
+        <a href="./index.html#menus">Menus</a>
+        <a href="#">Location</a>
+      </div>
+      <div class="header_middle">
+        <a href="./index.html" class="header_logo">
+          <h1>Sushi's</h1>
+          <span>Restaurant • Sushi Bar • Cocktails</span>
+        </a>
+        <a href="#" class="header_OO">Order Online</a>
+      </div>
+      <div class="header_nav header_nav_right">
+        <a href="./index.html#about_restaurant">About</a>
+        <a href="#">Reservations</a>
+      </div>
+      <div class="mobile_nav">
+        <a href="./index.html#menus">Menus</a>
+        <a href="#">Location</a>
+        <a href="#about">About</a>
+        <a href="#">Reservations</a>
+      </div>
+    </header>
+
+    <div
+      class="home_pic"
+      style="background-image: url('./Images/Sushi_Background_2.jpg')"></div>
+
+    <div class="page_intro">
+      <h1 class="headline">Lunch Menu</h1>
+      <div class="divider"></div>
+      Monday-Friday: 11am - 2:30pm
+      <br />
+      Saturday-Sunday: 12pm - 3pm
+    </div>
+
+    <div class="page_content">
+      <div class="container">
+        <section class="menu_area">
+          <div class="container">
+            <div class="menu_wrapper">
+              <div class="menu_section">
+                <div
+                  class="menu_section_header"
+                  onclick="toggleShow('appetizer_items')">
+                  Appetizer
+                </div>
+                <div id="appetizer_items" class="menu_section_content show">
+                  <ul class="menu_section_col">
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Miso Soup</div>
+                        <div class="menu_item_description">
+                          Fermented Soy Bean Paste Broth
+                        </div>
+                        <div class="menu_item_price">$2.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Sushi Salad</div>
+                        <div class="menu_item_description">
+                          Iceberg & Romaine Lettuce, Tomato, Onion, & Cucumber
+                          with Ginger Dressing
+                        </div>
+                        <div class="menu_item_price">$3.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="menu_section_col">
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Ebi Shumai</div>
+                        <div class="menu_item_description">
+                          Wasabi Pork Dumplings, Served Steamed or Deep-Fried
+                        </div>
+                        <div class="menu_item_price">$6.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Wasabi Shumai</div>
+                        <div class="menu_item_description">
+                          Wasabi Pork Dumplings, Served Steamed or Deep-Fried
+                        </div>
+                        <div class="menu_item_price">$6.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="menu_section">
+                <div
+                  class="menu_section_header"
+                  onclick="toggleShow('small_plates_items')">
+                  Small Plates
+                </div>
+                <div id="small_plates_items" class="menu_section_content show">
+                  <ul class="menu_section_col">
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Salmon Carpaccio</div>
+                        <div class="menu_item_description">
+                          Thinly Sliced Fresh Salmon, with a Ponzu Sauce
+                        </div>
+                        <div class="menu_item_price">$12.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">*Hamachi Crudo</div>
+                        <div class="menu_item_description">
+                          Sliced Fresh Yellow Tail, served with a Jalapeno ponzu
+                          sauce
+                        </div>
+                        <div class="menu_item_price">$14.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="menu_section_col">
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Lobster and Crabmeat Springrolls</div>
+                        <div class="menu_item_description">
+                          Served with Tropical Pineapple Sauce
+                        </div>
+                        <div class="menu_item_price">$9.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Dynamite</div>
+                        <div class="menu_item_description">
+                          Spicy Tuna, Cream Cheese, & Crab Meat, Baked with Honey Cream Sauce
+                        </div>
+                        <div class="menu_item_price">$10.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer id="reservations">
+      <div class="carry_out">
+        For carry out orders call
+        <a href="tel:123-456-7890">(123) 456-7890</a>
+      </div>
+      <div class="footer_container">
+        <div class="footer_col">
+          <div class="footer_store_hours">
+            <h3>HOURS</h3>
+
+            Lunch
+            <br />
+            Monday-Friday: 11am - 2:30pm
+            <br />
+            Saturday-Sunday: 12pm - 3pm
+            <br /><br />
+
+            Dinner
+            <br />
+            Monday-Friday: 4:30pm - 9pm
+            <br />
+            Saturday: 3pm - 10pm
+            <br />
+            Sunday: 3pm - 9pm
+          </div>
+          <div class="footer_store_location">
+            <h3>LOCATION</h3>
+
+            Sushi Restaurant
+            <br />
+            123 Main St
+            <br />
+            City, State 11111
+          </div>
+        </div>
+        <div class="footer_copyright">
+          © 2025 Copyright Sushi Restaurant. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>
