@@ -17,7 +17,7 @@
    text-transform: uppercase;
    font-weight: 700;
    margin: 0 40px 0 0;
-   
+   display: none;
 
 }
 
@@ -27,7 +27,7 @@
     padding-right: 10px;
 
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 300px) {
     .header_nav{
         display: none;
     }
