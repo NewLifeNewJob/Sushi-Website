@@ -51,10 +51,12 @@
           <div class="container">
             <div class="menu_wrapper">
               <div class="menu_section">
-                <a class="menu_section_header" href="#appetizer_items"
-                  >Appetizer</a
-                >
-                <div id="appetizer_items" class="menu_section_content">
+                <div
+                  class="menu_section_header"
+                  onclick="toggleShow('appetizer_items')">
+                  Appetizer
+                </div>
+                <div id="appetizer_items" class="menu_section_content show">
                   <ul class="menu_section_col">
                     <li>
                       <div class="menu_item">
@@ -80,7 +82,7 @@
                       </div>
                     </li>
                   </ul>
-                  <ul class="menu_section_col menu_section_col_2">
+                  <ul class="menu_section_col">
                     <li>
                       <div class="menu_item">
                         <div class="menu_item_name">Ebi Shumai</div>
@@ -107,7 +109,64 @@
                 </div>
               </div>
 
-              <div class="menu_section"></div>
+              <div class="menu_section">
+                <div
+                  class="menu_section_header"
+                  onclick="toggleShow('small_plates_items')">
+                  Small Plates
+                </div>
+                <div id="small_plates_items" class="menu_section_content show">
+                  <ul class="menu_section_col">
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Salmon Carpaccio</div>
+                        <div class="menu_item_description">
+                          Thinly Sliced Fresh Salmon, with a Ponzu Sauce
+                        </div>
+                        <div class="menu_item_price">$12.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">*Hamachi Crudo</div>
+                        <div class="menu_item_description">
+                          Sliced Fresh Yellow Tail, served with a Jalapeno ponzu
+                          sauce
+                        </div>
+                        <div class="menu_item_price">$14.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="menu_section_col">
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Lobster and Crabmeat Springrolls</div>
+                        <div class="menu_item_description">
+                          Served with Tropical Pineapple Sauce
+                        </div>
+                        <div class="menu_item_price">$9.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu_item">
+                        <div class="menu_item_name">Dynamite</div>
+                        <div class="menu_item_description">
+                          Spicy Tuna, Cream Cheese, & Crab Meat, Baked with Honey Cream Sauce
+                        </div>
+                        <div class="menu_item_price">$10.50</div>
+                        <div class="clear"></div>
+                        <div class="menu_item_price_line"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -154,5 +213,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

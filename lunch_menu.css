@@ -74,6 +74,11 @@ html {
   font-size: 1.4rem;
   font-weight: 700;
   z-index: 3;
+  cursor: pointer;
+}
+
+.menu_section_content {
+  display: none;
 }
 
 ul {
@@ -123,4 +128,18 @@ ul {
   .headline, .menu_section_header {
     font-size: 2rem;
   }
+}
+
+@media only screen and (min-width: 993px) {
+  .menu_section_content.show {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu_section_col {
+    width: 50%;
+  }
+}
+
+.show {
+  display: block;
 }
