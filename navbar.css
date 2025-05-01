@@ -97,8 +97,9 @@
 }
 .mobile_nav>a{
     text-decoration: none;
-    color: white;
+    color: darkorange;
     padding-right: 10px;
+    font-weight: 300;
 }
 @media only screen and (min-width: 400px) {
 .mobile_nav{
